@@ -41,7 +41,7 @@ public class DataTableBenchmarks
             var rowData = dataTable.NewRow();
             foreach (var column in Enumerable.Range(0, _columnCount))
             {
-                rowData[column] = $"DATA_{(row + 1) * (column + 1)}";
+                rowData[column] = $"DATA_{(row + 1) * (column + 1) % 100}";
             }
             dataTable.Rows.Add(rowData);
         }
