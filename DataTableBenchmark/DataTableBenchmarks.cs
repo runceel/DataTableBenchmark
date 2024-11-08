@@ -6,6 +6,8 @@ namespace DataTableBenchmark;
 
 [SimpleJob(runtimeMoniker: RuntimeMoniker.Net48, baseline: true)]
 [SimpleJob(runtimeMoniker: RuntimeMoniker.Net60)]
+[SimpleJob(runtimeMoniker: RuntimeMoniker.Net80)]
+[SimpleJob(runtimeMoniker: RuntimeMoniker.Net90)]
 [MemoryDiagnoser]
 public class DataTableBenchmarks
 {
